@@ -7,19 +7,20 @@
     </tr>
     <tr *ngFor="let service of services" [ngClass]="service.attributes.name === activeElement ? 'active' : 'none'"
       (click)="selectedItem(service.attributes.name)">
-      <td> {{service.attributes.name}}</td>
+      <td>{{service.attributes.name}}</td>
     </tr>
   </table>
 </div>
 
-<div class="banner" *ngFor="let provider of providers">
+<div><h3>Results</h3></div>
+<div  class="banner"  *ngFor="let provider of providers">
   <div class="wrapper" *ngIf="(provider.attributes.subspecialties.includes(activeElement))">
-     <p><img src="{{[provider.attributes.card-image]}}" alt="image" />
+     <p><img src="https://inquicker-iqapp-uploads-staging.s3.amazonaws.com/profile/practitioner/iqp_card_1526.jpg?1550354403" alt="image" /> <!-- {{[provider.attributes.card-image]}} - Need to check the reason for image with json properties having dash-->
       <span class="ban1">{{provider.attributes.name}}</span>
        <span class="ban2">{{provider.attributes.subspecialties}}</span>
      </p>
   </div>
-  <div>{{provider.attributes.profile-image}}</div>
+  
 </div>
 
 <router-outlet></router-outlet>
