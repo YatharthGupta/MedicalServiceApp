@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+.active {
+  background-color: #000000;
+  color : #f1ee14;
+}
+
+
+.gradient{
+  background: rgb(125,126,125); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(224, 224, 11) 0%, rgb(226, 29, 29) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(232, 248, 5)), color-stop(100%,rgb(233, 65, 65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgb(252, 227, 5) 0%,rgb(223, 22, 22) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgb(236, 213, 5) 0%,rgb(235, 31, 31) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgb(209, 255, 5) 0%,rgb(211, 27, 27) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgb(243, 227, 6) 0%,rgb(201, 16, 16) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.inheritback{
+   background-color: inherit; 
+  }
+
+
+
+ 
+
+.banner p {
+  font-family: "Gentium Basic";
+  font-size: 19px;
+  text-align: center;
+  color: #aaa;
+  margin-top: -10;
+  display: block;
+}
+img, span {
+  float:left;
+}
+.banner img {
+  float: center; 
+  margin: 5px;
+}
+[class="ban1"]{
+  font-size: 17px;
+  position:relative;
+  top:50px;
+  left:11px;
+}
+[class="ban2"] {
+  font-size: 17px;
+  position: relative;
+  left: -97px;
+  top: 74px;
+}
